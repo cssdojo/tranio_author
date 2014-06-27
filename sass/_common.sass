@@ -1,0 +1,111 @@
+// body
+// 	font-family: Arial, sans-serif
+// 	font-size: 14px
+// 	line-height: 1.4
+.c-row_mod
+	position: relative
+	.c-row__leftcol
+		margin-right: 480px
+
+.b-author
+	// overflow: hidden
+	position: absolute
+	bottom: 28px
+	right: 0
+	width: 425px
+	.b-author__text
+		overflow: hidden
+		font-size: 14px
+		line-height: 22px
+		margin-right: 195px
+	.b-author__pic
+		position: absolute
+		top: -48px
+		right: 45px
+		width: 127px
+		height: 127px
+		+border-radius(50%)
+		overflow: hidden
+		// float: right
+		// margin-left: 45px
+		img
+			display: block
+
+.b-overlay
+	display: none
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	bottom: 0
+	z-index: 20000
+	background: #000
+	background: rgba(#000, 0.20)
+	text-align: center
+	overflow: auto
+	font-size: 0
+	&:before
+		content: ""
+		display: inline-block
+		vertical-align: middle
+		width: 0
+		height: 100%
+
+.b-popup
+	position: relative
+	display: inline-block
+	vertical-align: middle
+	margin: 115px 0
+	width: 830px
+	background: #fafafa
+	font-size: 12px
+	+border-radius(3px)
+	text-align: left
+	+box
+	overflow: hidden
+	+box-shadow(0 0 40px rgba(0,0,0,.1))
+	+font-smoothing
+	.b-popup__media
+		position: relative
+		height: 430px
+		+cover
+		text-align: center
+		color: #fff
+	.b-popup__mediainfo
+		position: absolute
+		bottom: 35px
+		left: 60px
+		right: 60px
+		h2
+			font-family: Verdana, Geneva, sans-serif
+			font-weight: bold
+			font-size: 60px
+			color: #fff
+			line-height: 1
+			margin-bottom: 25px
+		p
+			font-family: Georgia, Times, "Times New Roman", serif
+			font-size: 18px
+			font-style: italic
+			margin: 10px 0 0
+			line-height: 1.2
+	.b-popup__content
+		margin: 45px 60px
+		color: #333
+		font-family: Georgia, Times, "Times New Roman", serif
+		font-size: 20px
+		line-height: 33px
+		p
+			margin: 35px 0 0
+			&:first-letter
+				margin-left: 35px
+		blockquote
+			margin: 40px 0 40px -20px
+			font-style: italic
+			border-left: 3px solid #54a966
+			padding-left: 20px
+
+.has-open-popup
+	overflow: hidden
+
+
