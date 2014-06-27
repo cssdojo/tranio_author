@@ -1,14 +1,9 @@
-// body
-// 	font-family: Arial, sans-serif
-// 	font-size: 14px
-// 	line-height: 1.4
 .c-row_mod
 	position: relative
 	.c-row__leftcol
 		margin-right: 480px
 
 .b-author
-	// overflow: hidden
 	position: absolute
 	bottom: 28px
 	right: 0
@@ -26,11 +21,11 @@
 		height: 127px
 		+border-radius(50%)
 		overflow: hidden
-		// float: right
-		// margin-left: 45px
 		img
 			display: block
 
+.has-open-popup
+	overflow: hidden
 .b-overlay
 	display: none
 	position: fixed
@@ -50,19 +45,13 @@
 		vertical-align: middle
 		width: 0
 		height: 100%
-
 .b-popup
 	position: relative
 	display: inline-block
 	vertical-align: middle
 	margin: 115px 0 0
 	width: 830px
-	background: #fafafa
-	font-size: 12px
-	+border-radius(3px 3px 0 0)
-	text-align: left
 	+box
-	// overflow: hidden
 	+box-shadow(0 0 40px rgba(0,0,0,.1))
 	+font-smoothing
 	.b-popup__close
@@ -73,12 +62,19 @@
 		position: absolute
 		top: 0
 		right: -45px
+	.b-popup__body
+		background: #fff
+		font-size: 12px
+		text-align: left
+		+border-radius(3px)
+		overflow: hidden
 	.b-popup__media
 		position: relative
 		height: 430px
 		+cover
 		text-align: center
 		color: #fff
+		background: #333
 	.b-popup__mediainfo
 		position: absolute
 		bottom: 35px
@@ -113,7 +109,5 @@
 			border-left: 3px solid #54a966
 			padding-left: 20px
 
-.has-open-popup
-	overflow: hidden
 
 
